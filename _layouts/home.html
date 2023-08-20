@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!--
+	Celebrating 10 years!
+-->
+<html>
+
+{% include head.html %}
+
+<body>
+
+    {% include header.html %}
+
+    <!-- Banner -->
+    <section id="banner" class="major">
+        <div class="inner">
+            <header class="major">
+                <h1>{{ page.landing-title }}</h1>
+            </header>
+            <div class="content">
+                <p style="text-transform: lowercase;">{{ site.description }}</p>
+                <ul class="actions">
+                    <li><a href="#one" class="button next scrolly">View major highlights</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- One -->
+<div class="inner">
+    <header class="major">
+        <h2>2012</h2>
+    </header>
+</div>
+
+{% include tiles.html %}
+        <!--Two-->
+        <div class="inner">
+            <header class="major">
+                <h2>2013</h2>
+            </header>
+        </div>
+        {% if 'posts' == site.tiles-source %}
+        {% assign tiles = site.posts %}
+    {% elsif 'pages' == site.tiles-source %}
+        {% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false and item.year == 2013" %}
+    {% endif %}
+    <section id="one" class="tiles">
+      {% for tile in tiles limit:site.tiles-count %}
+      <article>
+        <span class="image">
+          <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+        </span>
+        <header class="major">
+          <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+          <p>{{ tile.description }}</p>
+        </header>
+      </article>
+      {% endfor %}
+    </section>
+
+
+    <!--three -->
+        <div class="inner">
+            <header class="major">
+                <h2>2014</h2>
+            </header>
+        </div>
+    {% if 'posts' == site.tiles-source %}
+    {% assign tiles = site.posts %}
+{% elsif 'pages' == site.tiles-source %}
+    {% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false and item.year == 2014" %}
+{% endif %}
+<section id="one" class="tiles">
+  {% for tile in tiles limit:site.tiles-count %}
+  <article>
+    <span class="image">
+      <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+    </span>
+    <header class="major">
+      <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+      <p>{{ tile.description }}</p>
+    </header>
+  </article>
+  {% endfor %}
+</section>
+
+<!--four-->
+<div class="inner">
+    <header class="major">
+        <h2>2015</h2>
+    </header>
+</div>
+
+{% if 'posts' == site.tiles-source %}
+{% assign tiles = site.posts %}
+{% elsif 'pages' == site.tiles-source %}
+{% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false and item.year == 2015" %}
+{% endif %}
+<section id="one" class="tiles">
+{% for tile in tiles limit:site.tiles-count %}
+<article>
+<span class="image">
+  <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+</span>
+<header class="major">
+  <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+  <p>{{ tile.description }}</p>
+</header>
+</article>
+{% endfor %}
+</section>
+
+<!--five-->
+<div class="inner">
+    <header class="major">
+        <h2>2016</h2>
+    </header>
+</div>
+
+{% if 'posts' == site.tiles-source %}
+{% assign tiles = site.posts %}
+{% elsif 'pages' == site.tiles-source %}
+{% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false and item.year == 2016" %}
+{% endif %}
+<section id="one" class="tiles">
+{% for tile in tiles limit:site.tiles-count %}
+<article>
+<span class="image">
+  <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+</span>
+<header class="major">
+  <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+  <p>{{ tile.description }}</p>
+</header>
+</article>
+{% endfor %}
+</section>
+                
+<!--six-->
+<div class="inner">
+    <header class="major">
+        <h2>2017</h2>
+    </header>
+</div>
+
+{% if 'posts' == site.tiles-source %}
+{% assign tiles = site.posts %}
+{% elsif 'pages' == site.tiles-source %}
+{% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false and item.year == 2017" %}
+{% endif %}
+<section id="one" class="tiles">
+{% for tile in tiles limit:site.tiles-count %}
+<article>
+<span class="image">
+  <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+</span>
+<header class="major">
+  <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+  <p>{{ tile.description }}</p>
+</header>
+</article>
+{% endfor %}
+</section>
+
+<!--seven-->
+<div class="inner">
+    <header class="major">
+        <h2>2018</h2>
+    </header>
+</div>
+
+{% if 'posts' == site.tiles-source %}
+{% assign tiles = site.posts %}
+{% elsif 'pages' == site.tiles-source %}
+{% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false and item.year == 2018" %}
+{% endif %}
+<section id="one" class="tiles">
+{% for tile in tiles limit:site.tiles-count %}
+<article>
+<span class="image">
+  <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+</span>
+<header class="major">
+  <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+  <p>{{ tile.description }}</p>
+</header>
+</article>
+{% endfor %}
+</section>
+
+<!--eight-->
+<div class="inner">
+    <header class="major">
+        <h2>2019</h2>
+    </header>
+</div>
+
+{% if 'posts' == site.tiles-source %}
+{% assign tiles = site.posts %}
+{% elsif 'pages' == site.tiles-source %}
+{% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false and item.year == 2019" %}
+{% endif %}
+<section id="one" class="tiles">
+{% for tile in tiles limit:site.tiles-count %}
+<article>
+<span class="image">
+  <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+</span>
+<header class="major">
+  <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+  <p>{{ tile.description }}</p>
+</header>
+</article>
+{% endfor %}
+</section>
+
+
+<!--nine-->
+<div class="inner">
+    <header class="major">
+        <h2>2020</h2>
+    </header>
+</div>
+
+{% if 'posts' == site.tiles-source %}
+{% assign tiles = site.posts %}
+{% elsif 'pages' == site.tiles-source %}
+{% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false and item.year == 2020" %}
+{% endif %}
+<section id="one" class="tiles">
+{% for tile in tiles limit:site.tiles-count %}
+<article>
+<span class="image">
+  <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+</span>
+<header class="major">
+  <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+  <p>{{ tile.description }}</p>
+</header>
+</article>
+{% endfor %}
+</section>
+
+<!--ten-->
+<div class="inner">
+    <header class="major">
+        <h2>2021</h2>
+    </header>
+</div>
+
+{% if 'posts' == site.tiles-source %}
+{% assign tiles = site.posts %}
+{% elsif 'pages' == site.tiles-source %}
+{% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false and item.year == 2021" %}
+{% endif %}
+<section id="one" class="tiles">
+{% for tile in tiles limit:site.tiles-count %}
+<article>
+<span class="image">
+  <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+</span>
+<header class="major">
+  <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+  <p>{{ tile.description }}</p>
+</header>
+</article>
+{% endfor %}
+</section>
+
+<!--eleven-->
+<div class="inner">
+    <header class="major">
+        <h2>2022</h2>
+    </header>
+</div>
+
+{% if 'posts' == site.tiles-source %}
+{% assign tiles = site.posts %}
+{% elsif 'pages' == site.tiles-source %}
+{% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false and item.year == 2022" %}
+{% endif %}
+<section id="one" class="tiles">
+{% for tile in tiles limit:site.tiles-count %}
+<article>
+<span class="image">
+  <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+</span>
+<header class="major">
+  <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+  <p>{{ tile.description }}</p>
+</header>
+</article>
+{% endfor %}
+</section>
+
+<!--tweleve-->
+<div class="inner">
+    <header class="major">
+        <h2>2023</h2>
+    </header>
+</div>
+
+{% if 'posts' == site.tiles-source %}
+{% assign tiles = site.posts %}
+{% elsif 'pages' == site.tiles-source %}
+{% assign tiles = site.html_pages | where_exp: "item", "item.show_tile != false and item.year == 2023" %}
+{% endif %}
+<section id="one" class="tiles">
+{% for tile in tiles limit:site.tiles-count %}
+<article>
+<span class="image">
+  <img src="{{ tile.image }}" alt="{{ tile.title }}" />
+</span>
+<header class="major">
+  <h3><a href="{{ tile.url  | relative_url }}" class="link">{{ tile.title }}</a></h3>
+  <p>{{ tile.description }}</p>
+</header>
+</article>
+{% endfor %}
+</section>
+
+        <!-- twelve -->
+        <section id="two">
+            <div class="inner">
+                <header class="major">
+                    <h2>Oh, and in case you were wondering...r0g</h2>
+                </header>
+                <p>{{ content }}</p>
+                <ul class="actions">
+                    <li><a href="https://openculture.agency/" class="button next">read more on our website</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>
