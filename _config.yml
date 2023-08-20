@@ -1,0 +1,43 @@
+# site settings
+title: r0g@10
+subtitle: Celebrating 10 years of r0g
+email: info@openculture.agency
+description: Over the years we have been dedicated to partnering with local grassroots organizations and governments to support open knowledge, open technology, and peacebuilding efforts
+baseurl: /ten # the subpath of your site, e.g. /blog
+url: danielkingori.github.io # the base hostname & protocol for your site
+author:
+street_address:  Knobelsdorffstr. 22
+city: Berlin
+zip_code: 14059 Berlin
+country: Germany
+phone: +49 (0)30 - 55071900
+
+# homepage tiles
+
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 20
+# social settings (key must match name of font awesome icon)
+# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
+# Icons are not shown if value is empty
+# You need to restart jekyll for changes to have an effect
+socials:
+  GitHub: https://github.com/andrewbanchich
+  GitLab:
+  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
+  Instagram:
+  LinkedIn: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+  Twitter: https://twitter.com/andrewbanchich
+  Facebook:
+  Slack:
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
+- README.md 
